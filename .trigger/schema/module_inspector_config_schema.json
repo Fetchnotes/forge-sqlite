@@ -1,0 +1,22 @@
+{
+	"type": "object",
+	"properties": {
+		"modules": {
+			"type": "object",
+			"additionalProperties": {
+				"type": "object",
+				"properties": {
+					"version": {
+						"type": "string",
+						"required": true
+					},
+					"config": {
+						"type": "object"
+					}
+				},
+				"additionalProperties": false
+			}
+		}
+	},
+	"additionalProperties": false
+}

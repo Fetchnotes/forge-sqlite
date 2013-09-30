@@ -1,0 +1,22 @@
+TForgeModuleResources
+v6
+r1
+cCheck dependencies
+cTouch /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle
+
+N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle
+t1379624586
+s68
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies28649b0a9eebb741^705ba30a9eebb741^---0#1#1#--18"Check dependencies36"552E811E-704B-463C-8C52-0DA377067114-
+
+CTouch /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle
+s401254246.653758
+e401254246.670044
+r1
+xTouch
+x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection126"Touch /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle67baa766a7eab741^0587ab66a7eab741^---0#0#0#--277"Touch build/Release-iphoneos/sqlite.bundle    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    /usr/bin/touch -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/sqlite.bundle36"1F839D76-1E2C-4567-8C3F-387ED3974029-
+

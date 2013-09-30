@@ -1,0 +1,7 @@
+[
+	{
+		"do": {
+			"add_ios_system_framework": "libsqlite3.0.dylib"
+		}
+	}
+]
