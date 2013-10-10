@@ -41,10 +41,6 @@
         @catch (NSException *exception) {
             [task error: exception.reason];
         }
-        
-        @finally {
-            [task error:@"Unknown failure"];
-        }
     });
 }
 
@@ -92,10 +88,6 @@
         @catch (NSException *exception) {
             [task error: exception.reason];
         }
-        
-        @finally {
-            [task error:@"Unknown failure"];
-        }
     });
 }
 
@@ -107,31 +99,37 @@
     queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         
-        // Locate Documents directory and open database.
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *docsPath = [paths objectAtIndex:0];
-        NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
-        FMDatabase *database = [FMDatabase databaseWithPath:path];
-        [database open];
+        @try {
         
-        NSMutableArray *multiQueryResultsArray = [NSMutableArray array];
-        
-        for (id query in queries) {
-            FMResultSet *resultsSet = [database executeQuery:query];
-            if (resultsSet == nil) {
-                [task error:[database lastErrorMessage]];
-            }
-            else {
-                NSMutableArray *queryResultsArray = [NSMutableArray array];
-                while ([resultsSet next]) {
-                    [queryResultsArray addObject:[resultsSet resultDictionary]];
+            // Locate Documents directory and open database.
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *docsPath = [paths objectAtIndex:0];
+            NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
+            FMDatabase *database = [FMDatabase databaseWithPath:path];
+            [database open];
+            
+            NSMutableArray *multiQueryResultsArray = [NSMutableArray array];
+            
+            for (id query in queries) {
+                FMResultSet *resultsSet = [database executeQuery:query];
+                if (resultsSet == nil) {
+                    [task error:[database lastErrorMessage]];
                 }
-                [multiQueryResultsArray addObject:queryResultsArray];
+                else {
+                    NSMutableArray *queryResultsArray = [NSMutableArray array];
+                    while ([resultsSet next]) {
+                        [queryResultsArray addObject:[resultsSet resultDictionary]];
+                    }
+                    [multiQueryResultsArray addObject:queryResultsArray];
+                }
             }
+            [database close];
+            [task success:multiQueryResultsArray];
         }
-        [database close];
-        [task success:multiQueryResultsArray];
         
+        @catch (NSException *exception) {
+            [task error: exception.reason];
+        }
     });
 }
 
@@ -144,104 +142,112 @@
     queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         
-        // Error handling.
-        if ([query length] == 0) {
-            [task error: @"Error: Query is 0 characters long"];
-            return;
-        }
+        @try {
         
-        // Locate Documents directory and open database.
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *docsPath = [paths objectAtIndex:0];
-        NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
-        FMDatabase *database = [FMDatabase databaseWithPath:path];
-        [database open];
-        
-        // Pop all query results into an NSMutableArray & close database.
-        NSMutableArray *resultsArray = [NSMutableArray array];
-        FMResultSet *resultsSet = [database executeQuery:query];
-        if (resultsSet == nil) {
-            [task error:[database lastErrorMessage]];
-        }
-        else {
-            while ([resultsSet next]) {
-                [resultsArray addObject:[resultsSet resultDictionary]];
+            // Error handling.
+            if ([query length] == 0) {
+                [task error: @"Error: Query is 0 characters long"];
+                return;
             }
-            [database close];
-            [task success:resultsArray];
+            
+            // Locate Documents directory and open database.
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *docsPath = [paths objectAtIndex:0];
+            NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
+            FMDatabase *database = [FMDatabase databaseWithPath:path];
+            [database open];
+            
+            // Pop all query results into an NSMutableArray & close database.
+            NSMutableArray *resultsArray = [NSMutableArray array];
+            FMResultSet *resultsSet = [database executeQuery:query];
+            if (resultsSet == nil) {
+                [task error:[database lastErrorMessage]];
+            }
+            else {
+                while ([resultsSet next]) {
+                    [resultsArray addObject:[resultsSet resultDictionary]];
+                }
+                [database close];
+                [task success:resultsArray];
+            }
+        }
+        
+        @catch (NSException *exception) {
+            [task error: exception.reason];
         }
     });
 }
 
 // Drops the given tables listed in an array of strings.
-+ (void)dropTables:(ForgeTask *)task tables:(NSArray *)tables {
++ (void)removeDatabase:(ForgeTask *)task {
     
     dispatch_queue_t queue;
     
     queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
         
-        // Locate Documents directory and open database.
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *docsPath = [paths objectAtIndex:0];
-        NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
-        FMDatabase *database = [FMDatabase databaseWithPath:path];
-        
-        if (![database open]) {
-            [task error: @"ERROR: createTables() was unable to open or create a database."];
+        @try {
+            
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            NSString *docsPath = [paths objectAtIndex:0];
+            NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
+            
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            [fileManager removeItemAtPath:path error:NULL];
+            
+            [task success: nil];
         }
         
-        [database open];
-        
-        // Iterate through the array and drop each table
-        for (id item in tables) {
-            NSString * query = [NSString stringWithFormat:@"DROP TABLE %@", item];
-            [database executeUpdate:query];
+        @catch (NSException *exception) {
+            [task error: exception.reason];
         }
-        
-        [database close];
-        
-        [task success: nil];
     });
 }
 
 + (void)getDeviceToken:(ForgeTask *)task {
     
-    #if !(TARGET_IPHONE_SIMULATOR)
+    @try {
     
-        dispatch_queue_t queue;
+        #if !(TARGET_IPHONE_SIMULATOR)
         
-        queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-        dispatch_async(queue, ^{
+            dispatch_queue_t queue;
             
-            // Locate Documents directory and open database.
-            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-            NSString *docsPath = [paths objectAtIndex:0];
-            NSString *path = [docsPath stringByAppendingPathComponent:@"temp-database.sqlite"];
-            FMDatabase *tempDatabase = [FMDatabase databaseWithPath:path];
+            queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            dispatch_async(queue, ^{
+                
+                // Locate Documents directory and open database.
+                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                NSString *docsPath = [paths objectAtIndex:0];
+                NSString *path = [docsPath stringByAppendingPathComponent:@"temp-database.sqlite"];
+                FMDatabase *tempDatabase = [FMDatabase databaseWithPath:path];
 
-            [tempDatabase open];
-            
-            NSMutableArray *results = [NSMutableArray array];
-            NSString* query = @"SELECT * from temp";
-            FMResultSet *set = [tempDatabase executeQuery:query];
-            if (set == nil) {
-                [task error:[tempDatabase lastErrorMessage]];
-            }
-            else {
-                while ([set next]) {
-                    [results addObject:[set resultDictionary]];
+                [tempDatabase open];
+                
+                NSMutableArray *results = [NSMutableArray array];
+                NSString* query = @"SELECT * from temp";
+                FMResultSet *set = [tempDatabase executeQuery:query];
+                if (set == nil) {
+                    [task error:[tempDatabase lastErrorMessage]];
                 }
-                [tempDatabase close];
-                [task success:results];
-            }
-        });
+                else {
+                    while ([set next]) {
+                        [results addObject:[set resultDictionary]];
+                    }
+                    [tempDatabase close];
+                    [task success:results];
+                }
+            });
+        
+        #else
+        
+            [task success:nil];
+        
+        #endif
+    }
     
-    #else
-    
-        [task success:nil];
-    
-    #endif
+    @catch (NSException *exception) {
+        [task error: exception.reason];
+    }
 }
 
 @end
