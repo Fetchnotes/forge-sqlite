@@ -1,1130 +1,0 @@
-TForgeModule
-v6
-r1
-cCheck dependencies
-cProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a normal armv7
-cLibtool /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a normal armv7s
-cCreateUniversalBinary /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7\ armv7s
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
-c00000000521BCCE10000000000000110
-t1377553633
-s272
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
-c00000000523B26C4000000000000036B
-t1379608260
-s875
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000523B26C4000000000000019E
-t1379608260
-s414
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c00000000523B26C50000000000076920
-t1379608261
-s485664
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000523B26C700000000004D6390
-t1379608263
-s5071760
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000523B26C90000000000A8EAD0
-t1379608265
-s11070160
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c00000000523B26CA00000000001A2270
-t1379608266
-s1712752
-
-N/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000523B26D00000000002597C70
-t1379608272
-s39418992
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
-c0000000050ED385D0000000000000110
-t1357723741
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c0000000051B4C1D5000000000003AE00
-t1370800597
-s241152
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c0000000051B4C1D90000000000322700
-t1370800601
-s3286784
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c0000000051B4C1DC000000000062AD10
-t1370800604
-s6466832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c0000000051B4C1E400000000000CAFB0
-t1370800612
-s831408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c0000000051B4C1E800000000011BCDF0
-t1370800616
-s18599408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
-c00000000521BCCE10000000000000110
-t1377553633
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
-c00000000523B26C4000000000000036B
-t1379608260
-s875
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000523B26C4000000000000019E
-t1379608260
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c00000000523B26C50000000000076920
-t1379608261
-s485664
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000523B26C700000000004D6390
-t1379608263
-s5071760
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000523B26C90000000000A8EAD0
-t1379608265
-s11070160
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c00000000523B26CA00000000001A2270
-t1379608266
-s1712752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000523B26D00000000002597C70
-t1379608272
-s39418992
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/ForgeCore
-c000000005229EF5F000000000055CECC
-t1378479967
-s5623500
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-c000000005229EF5F000000000000010F
-t1378479967
-s271
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-c000000005229EF5F0000000000000220
-t1378479967
-s544
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-c000000005229EF5F0000000000000403
-t1378479967
-s1027
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-c000000005229EF5F0000000000000187
-t1378479967
-s391
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-c000000005229EF5F00000000000002F6
-t1378479967
-s758
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-c000000005229EF5F0000000000000BA2
-t1378479967
-s2978
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-c000000005229EF5F000000000000037A
-t1378479967
-s890
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-c000000005229EF5F000000000000013F
-t1378479967
-s319
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-c000000005229EF5F00000000000002F7
-t1378479967
-s759
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-c000000005229EF5F0000000000000115
-t1378479967
-s277
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-c000000005229EF5F00000000000001C2
-t1378479967
-s450
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-c000000005229EF5F0000000000002DBE
-t1378479967
-s11710
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-c000000005229EF5F0000000000000212
-t1378479967
-s530
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-c000000005229EF5F000000000000057F
-t1378479967
-s1407
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-c000000005229EF5F00000000000000A2
-t1378479967
-s162
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-c000000005229EF5F0000000000000103
-t1378479967
-s259
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-c000000005229EF5F0000000000000CDD
-t1378479967
-s3293
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-c000000005229EF5F0000000000000182
-t1378479967
-s386
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-c000000005229EF5F0000000000000149
-t1378479967
-s329
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/ForgeCore
-c000000005229EF5F000000000055CECC
-t1378479967
-s5623500
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ALAsset+Data.h
-c000000005229EF5F000000000000010F
-t1378479967
-s271
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/BorderControl.h
-c000000005229EF5F0000000000000220
-t1378479967
-s544
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeApp.h
-c000000005229EF5F0000000000000403
-t1378479967
-s1027
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeAppDelegate.h
-c000000005229EF5F0000000000000187
-t1378479967
-s391
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeCore.h
-c000000005229EF5F00000000000002F6
-t1378479967
-s758
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeEventListener.h
-c000000005229EF5F0000000000000BA2
-t1378479967
-s2978
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeFile.h
-c000000005229EF5F000000000000037A
-t1378479967
-s890
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeLog.h
-c000000005229EF5F000000000000013F
-t1378479967
-s319
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeTask.h
-c000000005229EF5F00000000000002F7
-t1378479967
-s759
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeUtil.h
-c000000005229EF5F0000000000000115
-t1378479967
-s277
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/ForgeViewController.h
-c000000005229EF5F00000000000001C2
-t1378479967
-s450
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/JSONKit.h
-c000000005229EF5F0000000000002DBE
-t1378479967
-s11710
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSData+Base64.h
-c000000005229EF5F0000000000000212
-t1378479967
-s530
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-c000000005229EF5F000000000000057F
-t1378479967
-s1407
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-c000000005229EF5F00000000000000A2
-t1378479967
-s162
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/NSURL+QueryString.h
-c000000005229EF5F0000000000000103
-t1378479967
-s259
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/Reachability.h
-c000000005229EF5F0000000000000CDD
-t1378479967
-s3293
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/UIImage+ResizeImage.h
-c000000005229EF5F0000000000000182
-t1378479967
-s386
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/../ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-c000000005229EF5F0000000000000149
-t1378479967
-s329
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-c00000000521CD2BE0000000000001142
-t1377620670
-s4418
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m
-c0000000050AF811200000000000085A8
-t1353679122
-s34216
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.h
-c00000000521CD2BE000000000000049A
-t1377620670
-s1178
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m
-c0000000050AF811200000000000015CD
-t1353679122
-s5581
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-c00000000521CD2BE000000000000081F
-t1377620670
-s2079
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m
-c0000000050AF811200000000000016F7
-t1353679122
-s5879
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-c00000000521CD2BE00000000000003FE
-t1377620670
-s1022
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m
-c0000000050AF81120000000000000FDA
-t1353679122
-s4058
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-c00000000521CD2BE0000000000000CF6
-t1377620670
-s3318
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m
-c0000000050AF8112000000000000306B
-t1353679122
-s12395
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-c000000005229EF5F0000000000000159
-t1378479967
-s345
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o
-t1381244265
-s106692
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o
-t1381244265
-s24464
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o
-t1381244265
-s40388
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o
-t1381244265
-s27384
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o
-t1381244265
-s52444
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList
-c000000005229F8E100000000000004F4
-t1378482401
-s1268
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a
-t1381272830
-s397320
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o
-t1381244265
-s77564
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o
-t1381272830
-s65696
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o
-t1381244266
-s106260
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o
-t1381244265
-s24464
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o
-t1381244265
-s40404
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o
-t1381244265
-s27388
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o
-t1381244266
-s52432
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/ForgeModule.LinkFileList
-c000000005229F8E100000000000004FB
-t1378482401
-s1275
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a
-t1381272830
-s396784
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o
-t1381244266
-s77456
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o
-t1381272830
-s65696
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a
-t1381272830
-s794152
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.h
-c00000000523213FF00000000000000C8
-t1379013631
-s200
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m
-c000000005252F41F000000000000248F
-t1381168159
-s9359
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.h
-c000000005229EF5F0000000000000087
-t1378479967
-s135
-
-N/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m
-c0000000052548CFB0000000000000D46
-t1381272827
-s3398
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch
-t1379624584
-s5709640
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch
-t1380904783
-s5704800
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch
-t1380567402
-s5704800
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch
-t1379624584
-s5709520
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch
-t1380567402
-s5704920
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch
-t1380904783
-s5704920
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.pth
-t1378482402
-s5005368
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.pth
-t2
-s0
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.pth
-t1378502262
-s5005408
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.pth
-t1378502262
-s5005368
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.pth
-t2
-s0
-
-N/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.pth
-t1378482402
-s5005408
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies420a8681c404b841^8ca0a181c404b841^---0#1#1#--18"Check dependencies36"0CBBF2E3-5D9A-4CB5-A894-21829B52243F-
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937063.181241
-e402937065.483144
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m183"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler23da2ee75404b841^4eed7ce95404b841^---0#0#1#-19%DVTDocumentLocation2@112"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m0000000000000000^4139"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o FMDatabase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabase.o36"F98794FF-B168-48DA-B019-502DF4C0A3DB-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937063.182023
-e402937065.250779
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m201"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o FMDatabaseAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler33f92ee75404b841^9cc040e95404b841^---0#0#1#-19%DVTDocumentLocation2@121"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m0000000000000000^4193"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o FMDatabaseAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseAdditions.o36"CF0A1E16-E201-406B-B922-AE1F047697D2-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.224488
-e402937065.471012
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m191"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o FMDatabasePool.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler52ef39e95404b841^cb0e79e95404b841^---0#0#1#-19%DVTDocumentLocation2@116"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m0000000000000000^4163"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o FMDatabasePool.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabasePool.o36"16A8DB6A-5C45-43C8-8F75-733E9DE83428-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.253868
-e402937065.451074
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m193"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o FMDatabaseQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler0b9741e95404b841^eaca73e95404b841^---0#0#1#-19%DVTDocumentLocation2@117"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m0000000000000000^4169"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o FMDatabaseQueue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMDatabaseQueue.o36"30E35CE9-EE0B-4ED7-AB33-BE582FDEF7FD-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.326196
-e402937065.548064
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m185"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd7f953e95404b841^2f4e8ce95404b841^---0#0#1#-19%DVTDocumentLocation2@113"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m0000000000000000^4145"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o FMResultSet.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/FMResultSet.o36"022FDF5C-B466-44B2-877B-9F9C818DF297-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937063.180643
-e402937065.323820
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m183"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o sqlite_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler34d62ee75404b841^991053e95404b841^---0#0#1#-19%DVTDocumentLocation2@112"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m0000000000000000^4139"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o sqlite_API.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_API.o36"FE827AC6-43AA-4EF9-AB43-F530ED898C54-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402965630.751254
-e402965630.849318
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m203"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o sqlite_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler43c9c07ec404b841^eb73d97ec404b841^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m0000000000000000^4199"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o sqlite_EventListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/sqlite_EventListener.o36"42DA1E9C-5CFD-440C-9CEB-DF8D4578E00A-
-bFA71176C-B75F-4DBB-AF3D-392A170B0360
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.490905
-e402937066.174650
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m185"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o FMDatabase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler363b7ee95404b841^95b62cea5404b841^---0#0#1#-19%DVTDocumentLocation2@112"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m0000000000000000^4146"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o FMDatabase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabase.o36"83D6A81F-4538-4BBD-BBFB-EC04ED1814B6-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.549536
-e402937065.801817
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m203"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o FMDatabaseAdditions.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler2a018de95404b841^4a43cde95404b841^---0#0#1#-19%DVTDocumentLocation2@121"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m0000000000000000^4200"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o FMDatabaseAdditions.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseAdditions.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseAdditions.o36"5D551D39-718D-4E90-A6EC-313BEFD52300-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.792270
-e402937065.992194
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m193"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o FMDatabasePool.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler6347cbe95404b841^eb53fee95404b841^---0#0#1#-19%DVTDocumentLocation2@116"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m0000000000000000^4170"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o FMDatabasePool.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabasePool.o36"923E9430-F777-4CA2-BA3D-6AB70D9489F3-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.803299
-e402937065.951603
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m195"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o FMDatabaseQueue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9889cee95404b841^7fdff3e95404b841^---0#0#1#-19%DVTDocumentLocation2@117"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m0000000000000000^4176"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o FMDatabaseQueue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMDatabaseQueue.o36"C9A5ADE5-B41B-48D2-BDF8-6D99566DAD18-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.953042
-e402937066.142301
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m187"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o FMResultSet.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerf581f4e95404b841^f86d24ea5404b841^---0#0#1#-19%DVTDocumentLocation2@113"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m0000000000000000^4152"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o FMResultSet.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/FMResultSet.o36"365D2678-B58D-4968-A88C-20083855C856-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402937065.453110
-e402937066.019918
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m185"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o sqlite_API.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerdb8b74e95404b841^fb1e05ea5404b841^---0#0#1#-19%DVTDocumentLocation2@112"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m0000000000000000^4146"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o sqlite_API.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_API.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_API.o36"9CF23459-561A-444D-A3AC-468BB5AD96C1-
-bDA3D4A1D-0805-42F4-BDA7-55DD7BFC2362
-
-CCompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402965630.753350
-e402965630.849328
-r1
-xCompileC
-xbuild/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabase.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMResultSet.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabasePool.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/FMDatabaseQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m205"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o sqlite_EventListener.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerbc40c17ec404b841^236bd97ec404b841^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m0000000000000000^4206"CompileC build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o sqlite_EventListener.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. -include /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch -MMD -MT dependencies -MF /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.d --serialize-diagnostics /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/sqlite_EventListener.m -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/sqlite_EventListener.o36"423D090D-073D-45D8-B17E-559C68541820-
-bFA71176C-B75F-4DBB-AF3D-392A170B0360
-
-CCreateUniversalBinary /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal "armv7 armv7s"
-s401254246.008987
-e401254246.046397
-r1
-xCreateUniversalBinary
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a
-xnormal
-xarmv7 armv7s
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Create universal binary /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a70d00266a7eab741^7fdf0b66a7eab741^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a0000000000000000^685"CreateUniversalBinary build/Release-iphoneos/libForgeModule.a normal "armv7 armv7s"    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    libtool -static /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a36"9C82FEC1-6B39-4940-B93B-6FF6BE057A6F-
-
-CCreateUniversalBinary /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a normal armv7\ armv7s
-s402965630.886473
-e402965630.952501
-r1
-xCreateUniversalBinary
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a
-xnormal
-xarmv7 armv7s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection147"Create universal binary /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a82"CreateUniversalBinary build/Release-iphoneos/libForgeModule.a normal armv7\ armv7s3c31e37ec404b841^3dd7f37ec404b841^---0#0#1#-19%DVTDocumentLocation2@139"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a0000000000000000^1583"CreateUniversalBinary build/Release-iphoneos/libForgeModule.a normal armv7\ armv7s    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    libtool -static /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/libForgeModule.a36"ABD3C70B-DEB5-43A5-820B-EB244BEFA9A4-
-bFA71176C-B75F-4DBB-AF3D-392A170B0360
-
-CLibtool /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a normal armv7
-s402965630.858659
-e402965630.877655
-r1
-xLibtool
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a
-xnormal
-xarmv7
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a normal armv7117"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a normal armv78124dc7ec404b841^75aee07ec404b841^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--2026"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a normal armv7    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -filelist /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/ForgeModule.LinkFileList -ObjC -framework SystemConfiguration -framework AssetsLibrary -framework CoreGraphics -framework UIKit -framework Foundation -framework ForgeCore -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7/libForgeModule.a36"F9769716-7F46-4BE5-9D5B-2329A8A46E2C-
-bFA71176C-B75F-4DBB-AF3D-392A170B0360
-
-CLibtool /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a normal armv7s
-s402965630.858647
-e402965630.877406
-r1
-xLibtool
-x/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a
-xnormal
-xarmv7s
-o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a normal armv7s119"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a normal armv7s7423dc7ec404b841^f59ce07ec404b841^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--2031"Libtool build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a normal armv7s    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -filelist /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/ForgeModule.LinkFileList -ObjC -framework SystemConfiguration -framework AssetsLibrary -framework CoreGraphics -framework UIKit -framework Foundation -framework ForgeCore -o /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/Objects-normal/armv7s/libForgeModule.a36"1DB4EBF2-5316-4649-9E44-6D6BB18171F3-
-bFA71176C-B75F-4DBB-AF3D-392A170B0360
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s401317383.491763
-e401317384.392281
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch311"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler3c4d7e079eebb741^9e7e64089eebb741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^4214"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-baavyfolqyneeeegyjsrkrkooppp/ForgeModule-Prefix.pch.pch36"D06591D2-404A-4DBF-B0CA-88917DD5D19A-
-b0DA39250-559D-45F7-980F-ADDD4E146CC6
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402597581.490404
-e402597583.352761
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch310"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler5ff07dcd26ffb741^72505acf26ffb741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^4159"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-bwfpiplhlcldckbltphyqddauoet/ForgeModule-Prefix.pch.pch36"71729C8A-4CA5-4379-B1E2-419FB4AB235C-
-bE7400916-6EA0-4D5C-8509-6D25D46F3ECC
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402260202.034178
-e402260202.491494
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch310"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerbe1509ea00fab741^99d37dea00fab741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^3239"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-faylladfjuuapkgdkizrxkvukzme/ForgeModule-Prefix.pch.pch36"A1B9E0A4-6743-4087-96FB-BB7BF8C85600-
-bDCAC98B5-5391-4B74-AC2A-BDB41BDDF4EB
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s401317383.490276
-e401317384.392227
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch310"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerb3077e079eebb741^6f6264089eebb741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^4211"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/usr/bin:/Applications/Xcode.app-old/Contents/Developer/usr/local/bin:/Applications/Xcode.app-old/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app-old/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app-old/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-flafrqpnuxcrvbakhklxwfuhzgon/ForgeModule-Prefix.pch.pch36"28BB323A-A490-4F7A-A698-03443AAC4AB1-
-b0DA39250-559D-45F7-980F-ADDD4E146CC6
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402260202.035729
-e402260202.534354
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch311"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler388509ea00fab741^03d088ea00fab741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^3242"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-ftidgceazahuxidvewtcdsibvlxg/ForgeModule-Prefix.pch.pch36"C9047FC8-38BC-4F21-8EB6-F36739A15B85-
-bDCAC98B5-5391-4B74-AC2A-BDB41BDDF4EB
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s402597581.491909
-e402597583.408230
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeCore.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeTask.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeLog.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeAppDelegate.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeApp.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/JSONKit.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeViewController.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeEventListener.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeFile.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ForgeUtil.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/BorderControl.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/ALAsset+Data.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIImage+ResizeImage.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSData+Base64.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DirectoryLocations.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSURL+QueryString.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/Reachability.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/UIViewController+dismissViewControllerHelper.h
-d/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeCore.framework/Headers/NSFileManager+DoNotBackup.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch311"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilera4357ecd26ffb741^6b8268cf26ffb741^---0#0#1#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^4162"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wno-bool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.d -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/ForgeModule-Prefix-gpxircvbewuctqcgqehakfxbhget/ForgeModule-Prefix.pch.pch36"E3931770-E8EB-4645-8360-F102FD7A7C41-
-bE7400916-6EA0-4D5C-8509-6D25D46F3ECC
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400175201.727468
-e400175202.323542
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch091abb6130dab741^67d2526230dab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^2991"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-adrwehvsrrmxmsdwxofthezaibpo/ForgeModule-Prefix.pch.d36"821226E4-48AD-418C-B84E-C1164CC01127-
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s401254243.962606
-e401254244.714513
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch3011f763a7eab741^9302b764a7eab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^2991"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-belehxmvsconcrccdcxfwuodyjcq/ForgeModule-Prefix.pch.d36"42F2B925-79E5-41D3-8C3F-D199D7AB4860-
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400195062.095379
-e400195062.690116
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch806119f67ddab741^86aab0f67ddab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^3914"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bremjzzjngievleaahnmevrjbeyi/ForgeModule-Prefix.pch.d36"9D6BB3B1-FBA5-4EDA-BAB0-42BCC6A35035-
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400195062.095160
-e400195062.690132
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pchb11819f67ddab741^8db8b0f67ddab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^3911"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-bxhhpfzizacseihcbhdfhrtzriol/ForgeModule-Prefix.pch.d36"879B3AB3-3586-4682-82D3-A1FE2D79E188-
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s401254243.962600
-e401254244.714498
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pch8411f763a7eab741^b0e8b664a7eab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^2994"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-cqmfunpkrgblfbhccaerchvpmhgc/ForgeModule-Prefix.pch.d36"81E904FF-02D4-4915-ACB8-8D0E2B2093BF-
-
-CProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400175201.727564
-e400175202.385693
-r1
-xProcessPCH
-x/var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.pth
-xForgeModule-Prefix.pch
-xnormal
-xarmv7s
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile ForgeModule-Prefix.pchb611bb6130dab741^1fbc626230dab741^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch0000000000000000^2994"ProcessPCH /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.pth ForgeModule-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/ForgeModule.hmap -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos/include -I. -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources/armv7s -I/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/ForgeModule.build/Release-iphoneos/ForgeModule.build/DerivedSources -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/build/Release-iphoneos -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule -F/Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/.. --serialize-diagnostics /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.dia -c /Users/alexhorak/forge-workspace/modules/sqlite/inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch -o /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/vm/hzg_64bj7sl82yhclg5q2t240000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForgeModule-Prefix-dukykmrvwcdsnugpmwxykbxgoujl/ForgeModule-Prefix.pch.d36"637E648C-5256-4C0D-B59C-9FE462643B85-
-
