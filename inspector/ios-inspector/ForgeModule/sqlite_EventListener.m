@@ -11,26 +11,24 @@
 
 + (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
+    // Parse token
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"token" message:token delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Say Hello",nil];
-    [alert show];
 
+    // Find temp-database
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsPath = [paths objectAtIndex:0];
     NSString *path = [docsPath stringByAppendingPathComponent:@"temp-database.sqlite"];
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:path];
-    
-    UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"path" message:path delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Say Hello",nil];
-    [alert2 show];
 
+    // We only want to create it if it doesn't already exist
     if (fileExists == NO) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"it doesn't exist" message:@"nope" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Say Hello",nil];
-        [alert show];
+        
+        // TODO:
         // destroy and recreate
         // NSFileManager *fileManager = [NSFileManager defaultManager];
         // [fileManager removeItemAtPath:path error:NULL];
+        
         FMDatabase *database = [FMDatabase databaseWithPath:path];
         
         [database open];
@@ -40,9 +38,6 @@
         [database executeQuery:@"SELECT * from temp"];
         
         [database close];
-    } else {
-        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"does exist?" message:token delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Say Hello",nil];
-        [alert3 show];
     }
 }
 
