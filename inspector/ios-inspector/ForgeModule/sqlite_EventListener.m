@@ -46,7 +46,9 @@
     [alert show];
 }
 
-+ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {}
++ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:@"thing"];
+}
 
 // The example below passes an event through to JavaScript when the application is resumed.
 + (void)applicationWillEnterForeground:(UIApplication *)application {

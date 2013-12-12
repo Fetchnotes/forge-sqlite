@@ -12,36 +12,36 @@
 #   files that we want to exclude
 #
 #########################
- 
+
 #####
 # OS X temporary files that should never be committed
- 
+
 .DS_Store
 *.swp
 *.lock
 profile
- 
- 
+
+
 ####
 # Xcode temporary files that should never be committed
-# 
+#
 # NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
- 
+
 *~.nib
- 
- 
+
+
 ####
 # Xcode build files -
 #
 # NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
- 
+
 DerivedData/
- 
+
 # NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
- 
+
 build/
- 
- 
+
+
 #####
 # Xcode private settings (window sizes, bookmarks, breakpoints, custom executables, smart groups)
 #
@@ -52,7 +52,7 @@ build/
 #  saved in this file.
 # 99% of projects do NOT use those, so they do NOT want to version control this file.
 #  ..but if you're in the 1%, comment out the line "*.pbxuser"
- 
+
 *.pbxuser
 *.mode1v3
 *.mode2v3
@@ -62,8 +62,8 @@ build/
 !default.mode1v3
 !default.mode2v3
 !default.perspectivev3
- 
- 
+
+
 ####
 # Xcode 4 - semi-personal settings
 #
@@ -74,7 +74,7 @@ build/
 #
 # NB: this is exclusive with OPTION 2 below
 xcuserdata
- 
+
 # OPTION 2: ---------------------------------
 #     get rid of ALL personal settings, but KEEP SOME OF THEM
 #     - NB: you must manually uncomment the bits you want to keep
@@ -82,11 +82,11 @@ xcuserdata
 # NB: this is exclusive with OPTION 1 above
 #
 #xcuserdata/**/*
- 
+
 #     (requires option 2 above): Personal Schemes
 #
 #!xcuserdata/**/xcschemes/*
- 
+
 ####
 # XCode 4 workspaces - more detailed
 #
@@ -111,20 +111,24 @@ xcuserdata
 #         xcschememanagement.plist
 #
 #
- 
+
 ####
 # Xcode 4 - Deprecated classes
 #
 # Allegedly, if you manually "deprecate" your classes, they get moved here.
 #
 # We're using source-control, so this is a "feature" that we do not want!
- 
+
 *.moved-aside
- 
- 
+
+
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
 # ...none. Everything is now explained.
 inspector/ios-inspector/ForgeInspector/*
 inspector/ios-inspector/.DS_Store
+
+####
+#FORGE
+module/ios/module.a
