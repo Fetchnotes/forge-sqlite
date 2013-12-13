@@ -59,6 +59,11 @@ def add_to_json_array(build_params, filename, key, value):
 		with open(found_file, "w") as opened_file:
 			json.dump(file_json, opened_file, indent=2, sort_keys=True)
 
+def android_add_proguard_rule(build_params, rule):
+	with open("proguard-project.txt", "a") as proguard_file:
+		proguard_file.write("\n")
+		proguard_file.write(rule)
+
 def android_add_permission(build_params, permission):
 	add_element_to_xml(build_params,
 		file='AndroidManifest.xml',

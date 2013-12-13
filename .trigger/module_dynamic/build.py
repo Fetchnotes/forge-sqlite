@@ -4,7 +4,6 @@ import os
 import shutil
 from contextlib import contextmanager
 import logging
-from copy import deepcopy
 
 import validictory
 
@@ -29,20 +28,6 @@ def cd(target_dir):
 ElementTree.register_namespace('android', 'http://schemas.android.com/apk/res/android')
 ElementTree.register_namespace('tools', 'http://schemas.android.com/tools')
 
-def dict_merge(a, b):
-	'''recursively merges dict's. not just simple a['key'] = b['key'], if
-	both a and b have a key who's value is a dict then dict_merge is called
-	on both values and the result stored in the returned dictionary.'''
-	if not isinstance(b, dict):
-		return b
-	result = deepcopy(a)
-	for k, v in b.iteritems():
-		if k in result and isinstance(result[k], dict):
-				result[k] = dict_merge(result[k], v)
-		else:
-			result[k] = deepcopy(v)
-	return result
-
 def _call_with_params(method, build_params, params):
 	if isinstance(params, dict):
 		return method(build_params, **params)
@@ -56,8 +41,13 @@ def apply_module_to_osx_project(module_path, project_path, skip_framework=False,
 	if not os.path.exists(os.path.join(module_path, 'manifest.json')):
 		LOG.warning("Failed to include module: %s" % module_path)
 		return
-	with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
-		manifest = json.load(manifest_file)
+
+	if os.path.exists(os.path.join(module_path, 'identity.json')):
+		with open(os.path.join(module_path, 'identity.json')) as identity_file:
+			module_name = json.load(identity_file)['name']
+	else:
+		with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
+			module_name = json.load(manifest_file)['name']
 
 	# JS
 	if os.path.exists(os.path.join(module_path, 'javascript', 'module.js')):
@@ -70,32 +60,32 @@ def apply_module_to_osx_project(module_path, project_path, skip_framework=False,
 	# Tests
 	if include_tests:
 		if os.path.exists(os.path.join(module_path, 'tests', 'fixtures')):
-			if os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name'])):
-				shutil.rmtree(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name']))
+			if os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name)):
+				shutil.rmtree(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name))
 			if not os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures')):
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures'))
-			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name']))
+			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name))
 		if os.path.exists(os.path.join(module_path, 'tests', 'automated.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated', module_name+'.js'))
 		if os.path.exists(os.path.join(module_path, 'tests', 'interactive.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive', module_name+'.js'))
 
 	# Add module a if we want it
 	if not skip_framework:
-		module_framework = os.path.join(module_path, 'osx', '%s.framework' % manifest['name'])
+		module_framework = os.path.join(module_path, 'osx', '%s.framework' % module_name)
 		if os.path.isdir(module_framework):
-			shutil.copytree(module_framework, os.path.join(project_path, '%s.framework' % manifest['name']))
+			shutil.copytree(module_framework, os.path.join(project_path, '%s.framework' % module_name))
 			xcode_project = XcodeProject(os.path.join(project_path, 'ForgeInspector.xcodeproj', 'project.pbxproj'))
-			xcode_project.add_framework(manifest['name']+'.framework', "<group>")
-			xcode_project.add_saved_framework(manifest['name']+'.framework', "<group>")
+			xcode_project.add_framework(module_name+'.framework', "<group>")
+			xcode_project.add_saved_framework(module_name+'.framework', "<group>")
 			xcode_project.save()
 
 	if inspector_config:
@@ -109,7 +99,7 @@ def apply_module_to_osx_project(module_path, project_path, skip_framework=False,
 		else:
 			inspector_config = {
 				"modules": {
-					manifest['name']: {
+					module_name: {
 						"version": "exampleversion"
 					}
 				}
@@ -122,16 +112,16 @@ def apply_module_to_osx_project(module_path, project_path, skip_framework=False,
 		with open(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'app_config.js'), 'w') as app_config_js:
 			app_config_js.write("window.forge = {}; window.forge.config = %s;" % json.dumps(app_config))
 
-	# Validate config
+	# Validate app_config for module being added
 	if os.path.exists(os.path.join(module_path, 'config_schema.json')) and \
-			"config" in app_config['modules'][manifest['name']]:
+			"config" in app_config['modules'][module_name]:
 		with open(os.path.join(module_path, 'config_schema.json')) as schema_file:
 			config_schema = json.load(schema_file)
 
 		try:
-			validictory.validate(app_config['modules'][manifest['name']]['config'], config_schema)
+			validictory.validate(app_config['modules'][module_name]['config'], config_schema)
 		except validictory.ValidationError as e:
-			raise Exception("Validation failed for module '%s' with error: %s" % (manifest['name'], str(e)))
+			raise Exception("Validation failed for module '%s' with error: %s" % (module_name, str(e)))
 
 	# frameworks
 	module_frameworks = os.path.join(module_path, 'osx', 'frameworks')
@@ -175,20 +165,25 @@ def apply_module_to_osx_project(module_path, project_path, skip_framework=False,
 		if local_build_steps is None:
 			if not os.path.exists(os.path.join(project_path, "dist", "build_steps")):
 				os.makedirs(os.path.join(project_path, "dist", "build_steps"))
-			shutil.copy2(module_steps_path, os.path.join(project_path, "dist", "build_steps", manifest['name'] + ".json"))
+			shutil.copy2(module_steps_path, os.path.join(project_path, "dist", "build_steps", module_name + ".json"))
 
 
-def apply_module_to_ios_project(module_path, project_path, skip_a=False, inspector_config=False, include_tests=False, local_build_steps=None, app_config=None):
+def apply_module_to_ios_project(module_path, project_path, app_config, skip_a=False, include_tests=False, local_build_steps=None):
 	"""Take the module in a specific folder and apply it to an xcode ios project in another folder"""
 	if not os.path.exists(os.path.join(module_path, 'manifest.json')):
 		LOG.warning("Failed to include module: %s" % module_path)
 		return
-	with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
-		manifest = json.load(manifest_file)
+
+	if os.path.exists(os.path.join(module_path, 'identity.json')):
+		with open(os.path.join(module_path, 'identity.json')) as identity_file:
+			module_name = json.load(identity_file)['name']
+	else:
+		with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
+			module_name = json.load(manifest_file)['name']
 
 	# JS
 	if os.path.exists(os.path.join(module_path, 'javascript', 'module.js')):
-		LOG.info("iOS module '%s': Appending module.js to all.js" % manifest['name'])
+		LOG.info("iOS module '%s': Appending module.js to all.js" % module_name)
 		with open(os.path.join(module_path, 'javascript', 'module.js')) as module_js:
 			with open(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'all.js'), 'a') as alljs:
 				alljs.write('(function () {\n')
@@ -197,78 +192,54 @@ def apply_module_to_ios_project(module_path, project_path, skip_a=False, inspect
 
 	# Tests
 	if include_tests:
-		LOG.info("iOS module '%s': Including test files" % manifest['name'])
+		LOG.info("iOS module '%s': Including test files" % module_name)
 		if os.path.exists(os.path.join(module_path, 'tests', 'fixtures')):
-			if os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name'])):
-				shutil.rmtree(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name']))
+			if os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name)):
+				shutil.rmtree(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name))
 			if not os.path.exists(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures')):
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures'))
-			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', manifest['name']))
+			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'ForgeInspector', 'assets', 'src', 'fixtures', module_name))
 		if os.path.exists(os.path.join(module_path, 'tests', 'automated.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'automated', module_name+'.js'))
 		if os.path.exists(os.path.join(module_path, 'tests', 'interactive.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'tests', 'interactive', module_name+'.js'))
 
 	# Add module a if we want it
 	if not skip_a:
-		LOG.info("iOS module '%s': Including module.a" % manifest['name'])
+		LOG.info("iOS module '%s': Including module.a" % module_name)
 		module_a = os.path.join(module_path, 'ios', 'module.a')
 		if os.path.isfile(module_a):
 			# Copy to libs
-			shutil.copy2(module_a, os.path.join(project_path, manifest['name']+'.a'))
+			shutil.copy2(module_a, os.path.join(project_path, module_name+'.a'))
 			
 			# Add to xcode build
 			xcode_project = XcodeProject(os.path.join(project_path, 'ForgeInspector.xcodeproj', 'project.pbxproj'))
-			xcode_project.add_framework(manifest['name']+'.a', "<group>")
+			xcode_project.add_framework(module_name+'.a', "<group>")
 			xcode_project.save()
-
-	if inspector_config:
-		LOG.info("iOS module '%s': Including inspector config" % manifest['name'])
-		if app_config is None:
-			with open(os.path.join(project_path, 'ForgeInspector', 'assets', 'app_config.json')) as app_config_json:
-				app_config = json.load(app_config_json)
-		if os.path.exists(os.path.join(module_path, 'inspector_config.json')):
-			with open(os.path.join(module_path, 'inspector_config.json'), "r") as inspector_config_file:
-				inspector_config = json.load(inspector_config_file)
-		else:
-			inspector_config = {
-				"modules": {
-					manifest['name']: {
-						"version": "exampleversion"
-					}
-				}
-			}
-
-		app_config = dict_merge(app_config, inspector_config)
-
-		with open(os.path.join(project_path, 'ForgeInspector', 'assets', 'app_config.json'), 'w') as app_config_json:
-			json.dump(app_config, app_config_json)
-		with open(os.path.join(project_path, 'ForgeInspector', 'assets', 'forge', 'app_config.js'), 'w') as app_config_js:
-			app_config_js.write("window.forge = {}; window.forge.config = %s;" % json.dumps(app_config))
 
 	# Validate config
 	if os.path.exists(os.path.join(module_path, 'config_schema.json')) and \
-			"config" in app_config['modules'][manifest['name']]:
+			"config" in app_config['modules'][module_name]:
 		with open(os.path.join(module_path, 'config_schema.json')) as schema_file:
 			config_schema = json.load(schema_file)
 
 		try:
-			validictory.validate(app_config['modules'][manifest['name']]['config'], config_schema)
+			validictory.validate(app_config['modules'][module_name]['config'], config_schema)
 		except validictory.ValidationError as e:
-			raise Exception("Validation failed for module '%s' with error: %s" % (manifest['name'], str(e)))
+			raise Exception("Validation failed for module '%s' with error: %s" % (module_name, str(e)))
 
 	# bundles
 	module_bundles = os.path.join(module_path, 'ios', 'bundles')
 	if os.path.isdir(module_bundles):
-		LOG.info("iOS module '%s': Including bundles" % manifest['name'])
+		LOG.info("iOS module '%s': Including bundles" % module_name)
 		xcode_project = XcodeProject(os.path.join(project_path, 'ForgeInspector.xcodeproj', 'project.pbxproj'))
 		for bundle in os.listdir(module_bundles):
 			if bundle.endswith(".bundle"):
@@ -277,16 +248,22 @@ def apply_module_to_ios_project(module_path, project_path, skip_a=False, inspect
 			
 		xcode_project.save()
 
+	# headers
+	module_headers = os.path.join(module_path, 'ios', 'headers')
+	if os.path.isdir(module_headers):
+		LOG.info("iOS module '%s': Including headers" % module_name)
+		shutil.copytree(module_headers, os.path.join(project_path, 'ForgeModule', 'forge_headers', module_name))
+
 	# build steps
 	module_steps_path = os.path.join(module_path, 'ios', 'build_steps.json')
 	if os.path.isfile(module_steps_path):
-		LOG.info("iOS module '%s': Applying build steps" % manifest['name'])
+		LOG.info("iOS module '%s': Applying build steps" % module_name)
 		with open(module_steps_path, 'r') as build_steps_file:
 			module_build_steps = json.load(build_steps_file)
 			with cd(project_path):
 				build_params = {
 					'app_config': app_config,
-					'project_path': project_path,
+					'project_path': os.path.join(project_path, "ForgeInspector"),
 					'src_path': local_build_steps
 				}
 				for step in module_build_steps:
@@ -316,20 +293,25 @@ def apply_module_to_ios_project(module_path, project_path, skip_a=False, inspect
 		if local_build_steps is None:
 			if not os.path.exists(os.path.join(project_path, "dist", "build_steps")):
 				os.makedirs(os.path.join(project_path, "dist", "build_steps"))
-			shutil.copy2(module_steps_path, os.path.join(project_path, "dist", "build_steps", manifest['name'] + ".json"))
+			shutil.copy2(module_steps_path, os.path.join(project_path, "dist", "build_steps", module_name + ".json"))
 
 
-def apply_module_to_android_project(module_path, project_path, skip_jar=False, inspector_config=False, include_tests=False, local_build_steps=None, app_config=None):
+def apply_module_to_android_project(module_path, project_path, app_config, skip_jar=False, include_tests=False, local_build_steps=None):
 	"""Take the module in a specific folder and apply it to an eclipse android project in another folder"""
 	if not os.path.exists(os.path.join(module_path, 'manifest.json')):
 		LOG.warning("Failed to include module: %s" % module_path)
 		return
-	with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
-		manifest = json.load(manifest_file)
+
+	if os.path.exists(os.path.join(module_path, 'identity.json')):
+		with open(os.path.join(module_path, 'identity.json')) as identity_file:
+			module_name = json.load(identity_file)['name']
+	else:
+		with open(os.path.join(module_path, 'manifest.json')) as manifest_file:
+			module_name = json.load(manifest_file)['name']
 
 	# JS
 	if os.path.exists(os.path.join(module_path, 'javascript', 'module.js')):
-		LOG.info("Android module '%s': Appending module.js to all.js" % manifest['name'])
+		LOG.info("Android module '%s': Appending module.js to all.js" % module_name)
 		with open(os.path.join(module_path, 'javascript', 'module.js')) as module_js:
 			with open(os.path.join(project_path, 'assets', 'forge', 'all.js'), 'a') as alljs:
 				alljs.write('(function () {\n')
@@ -338,74 +320,50 @@ def apply_module_to_android_project(module_path, project_path, skip_jar=False, i
 
 	# Tests
 	if include_tests:
-		LOG.info("Android module '%s': Including test files" % manifest['name'])
+		LOG.info("Android module '%s': Including test files" % module_name)
 		if os.path.exists(os.path.join(module_path, 'tests', 'fixtures')):
-			if os.path.exists(os.path.join(project_path, 'assets', 'src', 'fixtures', manifest['name'])):
-				shutil.rmtree(os.path.join(project_path, 'assets', 'src', 'fixtures', manifest['name']))
+			if os.path.exists(os.path.join(project_path, 'assets', 'src', 'fixtures', module_name)):
+				shutil.rmtree(os.path.join(project_path, 'assets', 'src', 'fixtures', module_name))
 			if not os.path.exists(os.path.join(project_path, 'assets', 'src', 'fixtures')):
 				os.makedirs(os.path.join(project_path, 'assets', 'src', 'fixtures'))
-			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'assets', 'src', 'fixtures', manifest['name']))
+			shutil.copytree(os.path.join(module_path, 'tests', 'fixtures'), os.path.join(project_path, 'assets', 'src', 'fixtures', module_name))
 		if os.path.exists(os.path.join(module_path, 'tests', 'automated.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'assets', 'forge', 'tests', 'automated'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'assets', 'forge', 'tests', 'automated', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'automated.js'), os.path.join(project_path, 'assets', 'forge', 'tests', 'automated', module_name+'.js'))
 		if os.path.exists(os.path.join(module_path, 'tests', 'interactive.js')):
 			try:
 				os.makedirs(os.path.join(project_path, 'assets', 'forge', 'tests', 'interactive'))
 			except OSError:
 				pass
-			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'assets', 'forge', 'tests', 'interactive', manifest['name']+'.js'))
+			shutil.copy2(os.path.join(module_path, 'tests', 'interactive.js'), os.path.join(project_path, 'assets', 'forge', 'tests', 'interactive', module_name+'.js'))
 
 	# Add module jar if we want it
 	if not skip_jar:
-		LOG.info("Android module '%s': Adding module jar to libs" % manifest['name'])
+		LOG.info("Android module '%s': Adding module jar to libs" % module_name)
 		module_jar = os.path.join(module_path, 'android', 'module.jar')
 		if not os.path.exists(os.path.join(project_path, 'libs')):
 			os.makedirs(os.path.join(project_path, 'libs'))
 		if os.path.exists(module_jar):
-			shutil.copy2(module_jar, os.path.join(project_path, 'libs', manifest['name']+'.jar'))
-	
-	if inspector_config:
-		LOG.info("Android module '%s': Including inspector config" % manifest['name'])
-		if app_config is None:
-			with open(os.path.join(project_path, 'assets', 'app_config.json')) as app_config_json:
-				app_config = json.load(app_config_json)
-		if os.path.exists(os.path.join(module_path, 'inspector_config.json')):
-			with open(os.path.join(module_path, 'inspector_config.json'), "r") as inspector_config_file:
-				inspector_config = json.load(inspector_config_file)
-		else:
-			inspector_config = {
-				"modules": {
-					manifest['name']: {
-						"version": "exampleversion"
-					}
-				}
-			}
+			shutil.copy2(module_jar, os.path.join(project_path, 'libs', module_name+'.jar'))
 
-		app_config = dict_merge(app_config, inspector_config)
-		
-		with open(os.path.join(project_path, 'assets', 'app_config.json'), 'w') as app_config_json:
-			json.dump(app_config, app_config_json)
-		with open(os.path.join(project_path, 'assets', 'forge', 'app_config.js'), 'w') as app_config_js:
-			app_config_js.write("window.forge = {}; window.forge.config = %s;" % json.dumps(app_config))
-
-	# Validate config
+	# Validate app_config for module being added
 	if os.path.exists(os.path.join(module_path, 'config_schema.json')) and \
-			"config" in app_config['modules'][manifest['name']]:
+			"config" in app_config['modules'][module_name]:
 		with open(os.path.join(module_path, 'config_schema.json')) as schema_file:
 			config_schema = json.load(schema_file)
 
 		try:
-			validictory.validate(app_config['modules'][manifest['name']]['config'], config_schema)
+			validictory.validate(app_config['modules'][module_name]['config'], config_schema)
 		except validictory.ValidationError as e:
-			raise Exception("Validation failed for module '%s' with error: %s" % (manifest['name'], str(e)))
+			raise Exception("Validation failed for module '%s' with error: %s" % (module_name, str(e)))
 
 	# res
 	module_res = os.path.join(module_path, 'android', 'res')
 	if os.path.isdir(module_res):
-		LOG.info("Android module '%s': Adding module res files" % manifest['name'])
+		LOG.info("Android module '%s': Adding module res files" % module_name)
 		for dirpath, _, filenames in os.walk(module_res):
 			if not os.path.exists(os.path.join(project_path, 'res', dirpath[len(module_res)+1:])):
 				os.makedirs(os.path.join(project_path, 'res', dirpath[len(module_res)+1:]))
@@ -419,7 +377,7 @@ def apply_module_to_android_project(module_path, project_path, skip_jar=False, i
 	# libs
 	module_res = os.path.join(module_path, 'android', 'libs')
 	if os.path.isdir(module_res):
-		LOG.info("Android module '%s': Adding module lib files" % manifest['name'])
+		LOG.info("Android module '%s': Adding module lib files" % module_name)
 		for dirpath, _, filenames in os.walk(module_res):
 			if not os.path.exists(os.path.join(project_path, 'libs', dirpath[len(module_res)+1:])):
 				os.makedirs(os.path.join(project_path, 'libs', dirpath[len(module_res)+1:]))
@@ -428,7 +386,7 @@ def apply_module_to_android_project(module_path, project_path, skip_jar=False, i
 
 	# build steps
 	if os.path.isfile(os.path.join(module_path, 'android', 'build_steps.json')):
-		LOG.info("Android module '%s': Performing build steps" % manifest['name'])
+		LOG.info("Android module '%s': Performing build steps" % module_name)
 		with open(os.path.join(module_path, 'android', 'build_steps.json')) as build_steps_file:
 			module_build_steps = json.load(build_steps_file)
 			with cd(project_path):
@@ -452,4 +410,4 @@ def apply_module_to_android_project(module_path, project_path, skip_jar=False, i
 			module_steps_path = os.path.join(module_path, 'android', 'build_steps.json')
 			if not os.path.exists(os.path.join(project_path, "build_steps")):
 				os.makedirs(os.path.join(project_path, "build_steps"))
-			shutil.copy2(module_steps_path, os.path.join(project_path, "build_steps", manifest['name'] + ".json"))
+			shutil.copy2(module_steps_path, os.path.join(project_path, "build_steps", module_name + ".json"))

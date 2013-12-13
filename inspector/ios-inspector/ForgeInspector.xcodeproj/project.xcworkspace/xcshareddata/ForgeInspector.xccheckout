@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9641A0AB-5425-4C94-8BAE-D88E2E940BDA</string>
+	<string>3C55C66A-3EB2-4180-B20B-EBFF752C563D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ForgeInspector</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1905C832-A7AB-4CD9-BFAB-07C958F4486E</key>
+		<key>3C7DD12B-43F4-4C6A-95F7-991876503201</key>
 		<string>https://github.com/horak/trigger-happy.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>inspector/ios-inspector/ForgeInspector.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1905C832-A7AB-4CD9-BFAB-07C958F4486E</key>
+		<key>3C7DD12B-43F4-4C6A-95F7-991876503201</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1905C832-A7AB-4CD9-BFAB-07C958F4486E</string>
+	<string>3C7DD12B-43F4-4C6A-95F7-991876503201</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1905C832-A7AB-4CD9-BFAB-07C958F4486E</string>
+			<string>3C7DD12B-43F4-4C6A-95F7-991876503201</string>
 			<key>IDESourceControlWCCName</key>
 			<string>sqlite</string>
 		</dict>

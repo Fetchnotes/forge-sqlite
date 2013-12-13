@@ -10,6 +10,15 @@
 				}
 			}
 		},
+		"identity.json": {
+			"type": "file",
+			"required": true,
+			"validators": {
+				"json_schema": {
+					"schema": "identity"
+				}
+			}
+		},
 		"config_schema.json": {
 			"type": "file"
 		},
@@ -56,11 +65,7 @@
 			"type": "directory",
 			"children": {
 				"module.jar": {
-					"type": "file",
-					"required": true,
-					"validators": {
-						"android_module": {}
-					}
+					"type": "file"
 				},
 				"build_steps.json": {
 					"type": "file",
@@ -89,11 +94,7 @@
 			"type": "directory",
 			"children": {
 				"module.a": {
-					"type": "file",
-					"required": true,
-					"validators": {
-						"ios_module": {}
-					}
+					"type": "file"
 				},
 				"build_steps.json": {
 					"type": "file",
@@ -110,6 +111,10 @@
 							"valid_bundle": {}
 						}
 					}
+				},
+				"headers": {
+					"type": "directory",
+					"additionalChildren": true
 				}
 			},
 			"additionalChildren": false

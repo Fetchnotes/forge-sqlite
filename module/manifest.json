@@ -1,6 +1,7 @@
 {
-    "description": "alerts galore",
-    "name": "sqlite",
-    "platform_version": "v2.0.0",
-    "version": "2.2"
+	"description": "Class method",
+	"min_platform_version": "v2.1.0",
+	"namespace": "sqlite",
+	"platform_version": "v2.1.0",
+	"version": "2.5"
 }

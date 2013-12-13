@@ -46,8 +46,24 @@
     [alert show];
 }
 
-+ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:@"thing"];
+//+ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+//    [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:@"thing"];
+//    NSLog(@"didReceiveRemoteNotification");
+//    [ForgeLog d:@"didReceiveRemoteNotification"];
+//}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+    UIApplicationState state = [application applicationState];
+    if (state == UIApplicationStateActive)
+    {
+        
+        UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"xxx" message:yourMessage delegate:self cancelButtonTitle:@"Done" otherButtonTitles: @"Anzeigen", nil] autorelease];
+        [alert setTag: 2];
+        [alert show];
+    } else {
+        // Do nothing
+    }
 }
 
 // The example below passes an event through to JavaScript when the application is resumed.

@@ -377,12 +377,10 @@ def which(program):
 	return None
 
 def ensure_lib_available(cookies, platform_version, file):
-	module_dynamic_path = path.split(path.abspath(__file__))[0]
+	if 'FORGE_PLATFORM_LOCATION' in os.environ:
+		return path.abspath(path.join(os.environ['FORGE_PLATFORM_LOCATION'], 'generate', 'lib', file))
 
-	# In case of forge-inspector check for file
-	server_path = path.abspath(path.join(module_dynamic_path, '..', '..', '..', '..', 'generate', 'lib', file))
-	if path.isfile(server_path):
-		return server_path
+	module_dynamic_path = path.split(path.abspath(__file__))[0]
 
 	lib_dir = path.abspath(path.join(module_dynamic_path, '..', '..', '.lib'))
 	hash_path = path.abspath(path.join(module_dynamic_path, '..', 'hash.json'))

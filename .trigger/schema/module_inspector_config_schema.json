@@ -1,6 +1,15 @@
 {
 	"type": "object",
 	"properties": {
+		"this_module": {
+			"type": "object",
+			"properties": {
+				"config": {
+					"type": "object",
+					"required": false
+				}
+			}
+		},
 		"modules": {
 			"type": "object",
 			"additionalProperties": {
@@ -11,7 +20,12 @@
 						"required": true
 					},
 					"config": {
-						"type": "object"
+						"type": "object",
+						"required": false
+					},
+					"disabled": {
+						"type": "boolean",
+						"required": false
 					}
 				},
 				"additionalProperties": false
