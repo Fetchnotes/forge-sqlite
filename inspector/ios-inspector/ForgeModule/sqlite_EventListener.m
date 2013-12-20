@@ -6,6 +6,13 @@
 
 + (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [ForgeLog d:@"Did finish launching with options"];
+    
+    if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]) {
+        [ForgeLog d:@"Received Push Notification while not running"];
+        [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:launchOptions];
+    }
+    
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 }
 
@@ -41,29 +48,18 @@
     }
 }
 
-+ (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"failed to register" message:@"ya" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Say Hello",nil];
-    [alert show];
-}
++ (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {}
 
-//+ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-//    [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:@"thing"];
-//    NSLog(@"didReceiveRemoteNotification");
-//    [ForgeLog d:@"didReceiveRemoteNotification"];
-//}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    
++ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     UIApplicationState state = [application applicationState];
-    if (state == UIApplicationStateActive)
-    {
-        
-        UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"xxx" message:yourMessage delegate:self cancelButtonTitle:@"Done" otherButtonTitles: @"Anzeigen", nil] autorelease];
-        [alert setTag: 2];
-        [alert show];
-    } else {
-        // Do nothing
-    }
+        if (state == UIApplicationStateActive)
+        {
+            [ForgeLog d:@"Received Push Notification while in foreground"];
+            [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceivedForeground" withParam:userInfo];
+        } else {
+            [ForgeLog d:@"Received Push Notification while in background"];
+            [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:userInfo];
+        }
 }
 
 // The example below passes an event through to JavaScript when the application is resumed.

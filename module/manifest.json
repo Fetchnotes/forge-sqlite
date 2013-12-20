@@ -1,7 +1,8 @@
 {
-	"description": "Class method",
+	"description": "Sqlites for all",
 	"min_platform_version": "v2.1.0",
 	"namespace": "sqlite",
 	"platform_version": "v2.1.0",
-	"version": "2.5"
+	"version": "3.5",
+	"changes": "launch options in didFinishLaunchingWithOptions"
 }

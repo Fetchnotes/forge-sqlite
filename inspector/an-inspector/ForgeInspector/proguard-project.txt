@@ -1,0 +1,5 @@
+# Without this libraries like guava cause a huge number of warnings which don't seem to actually matter
+-dontwarn **
+
+# Make sure all of our code is kept since we use reflection and the JS->Java bridge needs to not be obfuscated
+-keep class io.trigger.** { *; }
