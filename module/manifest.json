@@ -3,6 +3,6 @@
 	"min_platform_version": "v2.1.0",
 	"namespace": "sqlite",
 	"platform_version": "v2.1.0",
-	"version": "3.5",
-	"changes": "launch options in didFinishLaunchingWithOptions"
+	"version": "3.6.6",
+	"changes": "ok module.js is back"
 }

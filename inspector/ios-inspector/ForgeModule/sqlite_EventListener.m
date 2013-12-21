@@ -11,6 +11,7 @@
     if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]) {
         [ForgeLog d:@"Received Push Notification while not running"];
         [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:launchOptions];
+        // store in db
     }
     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];

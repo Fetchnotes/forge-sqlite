@@ -15,15 +15,11 @@ forge.sqlite = {
     // Events
     'onPushNotificationReceived': {
         'addListener': function (success) {
-            forge.logging.debug("Can haz a push notification!");
-            alert("hi");
             forge.internal.addEventListener("sqlite.pushNotificationReceived", success);
         }
     },
     'onPushNotificationReceived': {
         'addListener': function (success) {
-            forge.logging.debug("Can haz a push notifications!");
-            alert("hey");
             forge.internal.addEventListener("sqlite.pushNotificationReceivedInForeground", success);
         }
     }
