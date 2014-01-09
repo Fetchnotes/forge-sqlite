@@ -11,6 +11,29 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
+		<key>84eb5ebf-68d1-40e4-b764-f99b7e18c27cbuild</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84eb5ebf-68d1-40e4-b764-f99b7e18c27cfile</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>84eb5ebf-68d1-40e4-b764-f99b7e18c27cfile</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>usr/lib/libsqlite3.0.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
 		<key>B307826315C2A393006798D7</key>
 		<dict>
 			<key>isa</key>
@@ -713,7 +736,7 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				<string>B3FC517E15C14B2A003574D9</string>
 				<string>B3FC518015C14B2A003574D9</string>
 				<string>B3FC519315C14B35003574D9</string>
-				<string>c8a8492a-5ef4-4165-8355-ba2ee22eaf18build</string>
+				<string>84eb5ebf-68d1-40e4-b764-f99b7e18c27cbuild</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -818,7 +841,7 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 				<string>B3FC517B15C14B2A003574D9</string>
 				<string>B3FC517D15C14B2A003574D9</string>
 				<string>B3FC517F15C14B2A003574D9</string>
-				<string>c8a8492a-5ef4-4165-8355-ba2ee22eaf18file</string>
+				<string>84eb5ebf-68d1-40e4-b764-f99b7e18c27cfile</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1202,29 +1225,6 @@ mv build/Release-iphoneos/*.bundle ../build 2&gt;&gt;/dev/null || echo "No bundl
 			<string>B3FC519415C14B3C003574D9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>c8a8492a-5ef4-4165-8355-ba2ee22eaf18build</key>
-		<dict>
-			<key>fileRef</key>
-			<string>c8a8492a-5ef4-4165-8355-ba2ee22eaf18file</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Weak</string>
-				</array>
-			</dict>
-		</dict>
-		<key>c8a8492a-5ef4-4165-8355-ba2ee22eaf18file</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>usr/lib/libsqlite3.0.dylib</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

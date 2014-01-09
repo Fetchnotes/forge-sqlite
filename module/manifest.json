@@ -1,8 +1,8 @@
 {
-	"description": "Sqlites for all",
+	"description": "new module.js",
 	"min_platform_version": "v2.1.0",
 	"namespace": "sqlite",
 	"platform_version": "v2.1.0",
-	"version": "3.6.6",
-	"changes": "ok module.js is back"
+	"version": "3.7.6",
+	"changes": "fixed event listener i nmodule.js"
 }

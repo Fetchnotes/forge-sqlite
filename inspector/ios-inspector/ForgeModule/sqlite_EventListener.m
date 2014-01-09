@@ -6,14 +6,13 @@
 
 + (void)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [ForgeLog d:@"Did finish launching with options"];
+    [ForgeLog d:@"[FETCHNOTES] didFinishLaunchingWithOptions"];
     
     if ([launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"]) {
-        [ForgeLog d:@"Received Push Notification while not running"];
+        [ForgeLog d:@"[FETCHNOTES] Received Push Notification while not running"];
         [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:launchOptions];
-        // store in db
     }
-    
+     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 }
 
@@ -53,13 +52,16 @@
 
 + (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     UIApplicationState state = [application applicationState];
+    
+        [ForgeLog d:@"[FETCHNOTES] didReceiveRemoteNotification"];
+    
         if (state == UIApplicationStateActive)
         {
-            [ForgeLog d:@"Received Push Notification while in foreground"];
+            [ForgeLog d:@"[FETCHNOTES] Received Push Notification while in foreground"];
             [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceivedForeground" withParam:userInfo];
         } else {
-            [ForgeLog d:@"Received Push Notification while in background"];
-            [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:userInfo];
+            [ForgeLog d:@"[FETCHNOTES] Received Push Notification while in background"];
+            [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceivedBackground" withParam:userInfo];
         }
 }
 
