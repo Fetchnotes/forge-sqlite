@@ -15,5 +15,10 @@ forge.sqlite = {
         'addListener': function (success) {
            forge.internal.addEventListener("sqlite.pushNotificationReceivedBackground", success);
         }
+    },
+    'onDeviceTokenReceived': {
+        'addListener': function (success) {
+            forge.internal.addEventListener("sqlite.deviceTokenReceived", success);
+        }
     }
 }
