@@ -57,7 +57,7 @@ forge.internal.call('database.dropTables', success, error);
 ```
 
 ##Push Notifications with Urban Airship/Kinvey
-#The Basics:
+The Basics:
 1. A "distribution" Apple Push Notification Service (APNS) certificate first needs to be uploaded to Kinvey (or UA directly) . This differs from a development APNS certificate. Apple has two separate APNS servers that DO NOT work together. A device registered on one will not receive push notifications from the other. 
 2. Registering a device with a APNS will yield a `deviceToken`. This token must then be stored in the `user._push` array on Kinvey. This associates certain device(s) with a user.
 3. The very *first time that a device is registered with an APNS server, an alert prompts the user for access. Successive attempts at registration do not bring up the prompt. Apple docs encourage registration on every app launch.
@@ -68,7 +68,7 @@ APNS registration is done using the unique `deviceToken` generated after `didReg
 forge.sqlite.addEventListener('onDeviceTokenReceived', success, error);
 ```
 
-Check if device has been previously registered.
+Check if device has been previously registered:
 ```js
 forge.internal.call('sqlite.checkIfRegisteredWithAPNS', success, error);
 ```
