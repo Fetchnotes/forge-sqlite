@@ -204,49 +204,26 @@
     });
 }
 
-+ (void)getDeviceToken:(ForgeTask *)task {
++ (void)checkIfRegisteredWithAPNS:(ForgeTask *)task
+{
+    [ForgeLog d:@"[FETCHNOTES] checkIfRegisteredWithAPNS"];
     
-    @try {
-    
-        #if !(TARGET_IPHONE_SIMULATOR)
-        
-            dispatch_queue_t queue;
-            
-            queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-            dispatch_async(queue, ^{
-                
-                // Locate Documents directory and open database.
-                NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-                NSString *docsPath = [paths objectAtIndex:0];
-                NSString *path = [docsPath stringByAppendingPathComponent:@"temp-database.sqlite"];
-                FMDatabase *tempDatabase = [FMDatabase databaseWithPath:path];
-
-                [tempDatabase open];
-                
-                NSMutableArray *results = [NSMutableArray array];
-                NSString* query = @"SELECT * from temp";
-                FMResultSet *set = [tempDatabase executeQuery:query];
-                if (set == nil) {
-                    [task error:[tempDatabase lastErrorMessage]];
-                }
-                else {
-                    while ([set next]) {
-                        [results addObject:[set resultDictionary]];
-                    }
-                    [tempDatabase close];
-                    [task success:results];
-                }
-            });
-        
-        #else
-        
-            [task success:nil];
-        
-        #endif
+    if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes] != 0) {
+        [task success: nil];
+    } else {
+        [task error: nil];
     }
+}
+
++ (void)registerWithAPNS:(ForgeTask *)task
+{
+    [ForgeLog d:@"[FETCHNOTES] registerWithAPNS"];
     
-    @catch (NSException *exception) {
-        [task error: exception.reason];
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
+    if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes] != 0) {
+        [task success: nil];
+    } else {
+        [task error: nil];
     }
 }
 

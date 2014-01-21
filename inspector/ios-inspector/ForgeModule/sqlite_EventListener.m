@@ -1,6 +1,4 @@
 #import "sqlite_EventListener.h"
-#import "FMDatabase.h"
-#import "FMDatabaseQueue.h"
 
 @implementation sqlite_EventListener
 
@@ -12,40 +10,16 @@
         [ForgeLog d:@"[FETCHNOTES] Received Push Notification while not running"];
         [[ForgeApp sharedApp] event:@"sqlite.pushNotificationReceived" withParam:launchOptions];
     }
-     
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
 }
 
 + (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
-    // Parse token
+    [ForgeLog d:@"[FETCHNOTES] didRegisterForRemoteNotificationsWithDeviceToken"];
+    
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
 
-    // Find temp-database
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docsPath = [paths objectAtIndex:0];
-    NSString *path = [docsPath stringByAppendingPathComponent:@"temp-database.sqlite"];
-    BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:path];
-
-    // We only want to create it if it doesn't already exist
-    if (fileExists == NO) {
-        
-        // TODO:
-        // destroy and recreate
-        // NSFileManager *fileManager = [NSFileManager defaultManager];
-        // [fileManager removeItemAtPath:path error:NULL];
-        
-        FMDatabase *database = [FMDatabase databaseWithPath:path];
-        
-        [database open];
-        [database executeUpdate:@"CREATE TABLE temp(DeviceToken VARCHAR(50))"];
-        [database executeUpdate:@"INSERT into temp(DeviceToken) VALUES (?)", token];
-    
-        [database executeQuery:@"SELECT * from temp"];
-        
-        [database close];
-    }
+    [[ForgeApp sharedApp] event:@"sqlite.deviceTokenReceived" withParam:token];
 }
 
 + (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {}
