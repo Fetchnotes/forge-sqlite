@@ -156,7 +156,8 @@ inspector/ios-inspector/build
 inspector/ios-inspector/ForgeInspector.xcodeproj/project.pbxproj
 inspector/ios-inspector/ForgeInspector.xcodeproj/project.xcworkspace/xcshareddata/ForgeInspector.xccheckout
 inspector/ios-inspector.*
-inspector/an*
+inspector/*an
+inspector/an-inspector
 inspector/ios-inspector/ForgeModule/ForgeModule-Prefix.pch
 inspector/ios-inspector/ForgeModule/ForgeModule.xcodeproj/project.pbxproj
 inspector/ios-inspector/ForgeModule/ForgeModule.xcodeproj/xcshareddata/xcschemes/ForgeModule.xcscheme
