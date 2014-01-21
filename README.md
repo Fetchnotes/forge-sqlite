@@ -1,6 +1,6 @@
 forge-sqlite
 =============
-Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database, provides abstract CUD methods to be called via JS, helps capture the `device token` for use in push notification registration, and exposes Push Notifications to the JS.
+Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database, provides abstract CUD methods to be called via JS, helps capture the `device token` for use in push notification registration, and exposes push notification payloads to the JS.
 
 ##Database usage
 * Create queries with the structure shown below and they will be performed using [FMDB](https://github.com/ccgus/fmdb) transactions.
