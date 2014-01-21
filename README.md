@@ -1,6 +1,6 @@
-sqlite
+forge-sqlite
 =============
-Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database, provides abstract CUD methods to be called on the javascript level, and conveniently stores the `device token` for use in push notification registration.
+Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database, provides abstract CUD methods to be called via JS, helps capture the `device token` for use in push notification registration, and exposes Push Notifications to the JS.
 
 ##Database usage
 * Create queries with the structure shown below and they will be performed using [FMDB](https://github.com/ccgus/fmdb) transactions.
@@ -58,15 +58,26 @@ forge.internal.call('database.dropTables', {
 }, success, error);
 ```
 
-##Device Token usage
-iOS push notification registration must be done using the unique `device token` generated after `didRegisterForRemoteNotificationsWithDeviceToken` fires. sqlite grabs the token, cleans out all the `-` dividors, and throws it into a separate database. Since this token is generated every time the app is launched, a separate database instance is required to keep things performant. Every time the app is launched, an existence check is performed on `temp-database`; if it doesn't already exist, the token is parsed and stored. This way, the operation is only performed a single time. Access the device token like so:
+##Push Notifications with Urban Airship/Kinvey
+#The Basics:
+1. A "distribution" Apple Push Notification Service (APNS) certificate first needs to be uploaded to Kinvey (or UA directly) . This differs from a development APNS certificate. Apple has two separate APNS servers that DO NOT work together. A device registered on one will not receive push notifications from the other. 
+2. Registering a device with a APNS will yield a `deviceToken`. This token must then be stored in the `user._push` array on Kinvey. This associates certain device(s) with a user.
+3. The very *first time that a device is registered with an APNS server, an alert prompts the user for access. Successive attempts at registration do not bring up the prompt. Apple docs encourage registration on every app launch.
+4. A push notification is just a small JSON payload with details like what noise to make, what to increment the badge to, and custom properties. It's limited in size to 256 bytes in total.
+
+iOS push notification registration must be done using the device unique `deviceToken` generated after `didRegisterForRemoteNotificationsWithDeviceToken` fires. We grab the token, sanitize it, and expose it to the JS via the following listener you can plop into your JS:
 ```js
-forge.internal.call('database.getDeviceToken', success, error);
+$forgeListener.addCustomListener "sqlite", 'onDeviceTokenReceived', (payload) ->
+  ...
+```
+
+```js
+$forge.internal.call('sqlite.checkIfRegisteredWithAPNS')
 ```
 
 ##License
 
-Copyright (c) 2013, Fetchnotes Inc.
+Copyright (c) 2014, Fetchnotes Inc.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
