@@ -51,11 +51,9 @@ forge.internal.call('database.query', {
 ```
 
 ###dropTables
-Drops the given tables listed in an array of strings.
+Drops all tables.
 ```js
-forge.internal.call('database.dropTables', {
-  tables: ['table1', 'table2']
-}, success, error);
+forge.internal.call('database.dropTables', success, error);
 ```
 
 ##Push Notifications with Urban Airship/Kinvey
@@ -65,14 +63,14 @@ forge.internal.call('database.dropTables', {
 3. The very *first time that a device is registered with an APNS server, an alert prompts the user for access. Successive attempts at registration do not bring up the prompt. Apple docs encourage registration on every app launch.
 4. A push notification is just a small JSON payload with details like what noise to make, what to increment the badge to, and custom properties. It's limited in size to 256 bytes in total.
 
-iOS push notification registration must be done using the device unique `deviceToken` generated after `didRegisterForRemoteNotificationsWithDeviceToken` fires. We grab the token, sanitize it, and expose it to the JS via the following listener you can plop into your JS:
+APNS registration is done using the unique `deviceToken` generated after `didRegisterForRemoteNotificationsWithDeviceToken` fires. We grab the token, sanitize it, and expose it to the JS via the following listener you can plop into your JS:
 ```js
-$forgeListener.addCustomListener "sqlite", 'onDeviceTokenReceived', (payload) ->
-  ...
+forge.sqlite.addEventListener('onDeviceTokenReceived', success, error);
 ```
 
+Check if device has been previously registered.
 ```js
-$forge.internal.call('sqlite.checkIfRegisteredWithAPNS')
+forge.internal.call('sqlite.checkIfRegisteredWithAPNS', success, error);
 ```
 
 ##License
