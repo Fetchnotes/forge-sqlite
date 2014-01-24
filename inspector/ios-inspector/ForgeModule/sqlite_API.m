@@ -220,11 +220,7 @@
     [ForgeLog d:@"[FETCHNOTES] registerWithAPNS"];
     
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
-    if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes] != 0) {
-        [task success: nil];
-    } else {
-        [task error: nil];
-    }
+    [task success: nil];
 }
 
 @end

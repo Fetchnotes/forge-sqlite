@@ -19,10 +19,13 @@
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
 
-    [[ForgeApp sharedApp] event:@"sqlite.deviceTokenReceived" withParam:token];
+    [[ForgeApp sharedApp] event:@"sqlite.didRegisterWithAPNS" withParam:token];
 }
 
-+ (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {}
++ (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    [ForgeLog d:@"[FETCHNOTES] didFailToRegisterForRemoteNotificationsWithDeviceToken"];
+}
 
 + (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     UIApplicationState state = [application applicationState];
