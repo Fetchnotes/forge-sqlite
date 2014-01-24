@@ -16,9 +16,9 @@ forge.sqlite = {
            forge.internal.addEventListener("sqlite.pushNotificationReceivedBackground", success);
         }
     },
-    'onDeviceTokenReceived': {
+    'onDidRegisterWithAPNS': {
         'addListener': function (success) {
-            forge.internal.addEventListener("sqlite.deviceTokenReceived", success);
+            forge.internal.addEventListener("sqlite.didRegisterWithAPNS", success);
         }
     }
 }
