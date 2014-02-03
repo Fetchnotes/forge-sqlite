@@ -42,10 +42,4 @@
         }
 }
 
-// The example below passes an event through to JavaScript when the application is resumed.
-+ (void)applicationWillEnterForeground:(UIApplication *)application {
-	// It is good practise to namespace any events you send to JavaScript with your module name
-    application.applicationIconBadgeNumber = 0;
-}
-
 @end
