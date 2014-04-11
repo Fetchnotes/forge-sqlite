@@ -113,26 +113,6 @@
     }];
 }
 
-// Drops the given tables listed in an array of strings.
-+ (void)dropTables:(ForgeTask *)task tables:(NSArray *)tables {
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docsPath = [paths objectAtIndex:0];
-    NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
-    
-    FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:path];
-    
-    [queue inDatabase:^(FMDatabase *database) {
-        for (NSString*  table in tables){
-            NSString *query = [NSString stringWithFormat:@"DROP TABLE %@", table];
-            if ([database executeQuery:query] == NO){
-                [task error: [database lastErrorMessage]];
-            }
-        }
-        [task success: nil];
-    }];
-}
-
 // Deletes entire database
 + (void)removeDatabase:(ForgeTask *)task {
     
@@ -143,25 +123,6 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     [fileManager removeItemAtPath:path error:NULL];
     
-    [task success: nil];
-}
-
-+ (void)checkIfRegisteredWithAPNS:(ForgeTask *)task
-{
-    [ForgeLog d:@"[FETCHNOTES] checkIfRegisteredWithAPNS"];
-    
-    if ([[UIApplication sharedApplication] enabledRemoteNotificationTypes] != 0) {
-        [task success: nil];
-    } else {
-        [task error: nil];
-    }
-}
-
-+ (void)registerWithAPNS:(ForgeTask *)task
-{
-    [ForgeLog d:@"[FETCHNOTES] registerWithAPNS"];
-    
-    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound];
     [task success: nil];
 }
 
