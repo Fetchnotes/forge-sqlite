@@ -1,26 +1,26 @@
 forge-sqlite
 =============
-Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database, provides abstract CUD methods to be called via JS, helps capture the `device token` for use in push notification registration, and exposes push notification payloads to the JS.
+Native persistance for HTML5 iOS apps with [Trigger.IO](https://trigger.io/docs/current/api/native_plugins/index.html). Creates an sqlite3 database and provides abstract CUD methods to be called via JS.
 
 ##Database usage
 * Create queries with the structure shown below and they will be performed using [FMDB](https://github.com/ccgus/fmdb) transactions.
 * No need to include `;` at the end of your sqlite queries.
 * sqlite is dependent upon [FMDB](https://github.com/ccgus/fmdb).
 * ARC friendly.
-* Uses Grand Central Dispatch.
+* Uses FMDB's queue.
 
-###createTables
+### Create Tables
 Takes an array of sqlite queries to construct the database schema.
 ```js
-forge.internal.call('database.createTables', {
+forge.internal.call('sqlite.createTables', {
   schema: "CREATE TABLE sample(x INTEGER PRIMARY KEY ASC, y, z)"
 }, success, error);
 ```
 
-###writeAll
-Takes an array of objects. Each object contains a string `"query"`, and array containing a string `["arg"]`. If the write was succesfully executed, this call will return the id's affected within an array.
+### Write All
+Takes an array of objects. Each object contains a string `"query"`, and array containing a string `["arg"]`. If the write was successfully executed, this call will return the id's affected within an array.
 ```js
-forge.internal.call('database.writeAll', {
+forge.internal.call('sqlite.writeAll', {
   queries: [
     {
       query: 'UPDATE...',
@@ -34,43 +34,26 @@ forge.internal.call('database.writeAll', {
 }, success, error);
 ```
 
-###multiQuery
+### Queries
 Takes an array of queries and returns the resulting id's in an array.
 ```js
-forge.internal.call('database.multiQuery', {
+forge.internal.call('sqlite.multiQuery', {
   queries: ["SELECT...","SELECT..."]
 }, success, error);
 ```
 
-###query
+### Query
 Returns the JSON array of objects that match the passed in sqlite query.
 ```js
-forge.internal.call('database.query', {
+forge.internal.call('sqlite.query', {
   query: "SELECT..."
 }, success, error);
 ```
 
-###dropTables
-Drops all tables.
+### Remove Database
+Deletes entire database.
 ```js
-forge.internal.call('database.dropTables', success, error);
-```
-
-##Push Notifications with Urban Airship/Kinvey
-The Basics:
-1. A "distribution" Apple Push Notification Service (APNS) certificate first needs to be uploaded to Kinvey (or UA directly) . This differs from a development APNS certificate. Apple has two separate APNS servers that DO NOT work together. A device registered on one will not receive push notifications from the other. 
-2. Registering a device with a APNS will yield a `deviceToken`. This token must then be stored in the `user._push` array on Kinvey. This associates certain device(s) with a user.
-3. The very *first time that a device is registered with an APNS server, an alert prompts the user for access. Successive attempts at registration do not bring up the prompt. Apple docs encourage registration on every app launch.
-4. A push notification is just a small JSON payload with details like what noise to make, what to increment the badge to, and custom properties. It's limited in size to 256 bytes in total.
-
-APNS registration is done using the unique `deviceToken` generated after `didRegisterForRemoteNotificationsWithDeviceToken` fires. We grab the token, sanitize it, and expose it to the JS via the following listener you can plop into your JS:
-```js
-forge.sqlite.addEventListener('onDeviceTokenReceived', success, error);
-```
-
-Check if device has been previously registered:
-```js
-forge.internal.call('sqlite.checkIfRegisteredWithAPNS', success, error);
+forge.internal.call('sqlite.removeDatabase', success, error);
 ```
 
 ##License
