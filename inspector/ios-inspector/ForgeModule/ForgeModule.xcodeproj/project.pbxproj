@@ -74,13 +74,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B31B6D4315C13D5200854074 = {
+		50DA0023196B1E6500444045 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				B3CC61EF1716ECB500A1A8EF /* sqlite_API.h */,
-				B3CC61F01716ECB500A1A8EF /* sqlite_API.m */,
-				B3CC61F11716ECB500A1A8EF /* sqlite_EventListener.h */,
-				B3CC61F31716ECBB00A1A8EF /* sqlite_EventListener.m */,
 				D877785317DA2EC900CDDDB1 /* FMDatabase.h */,
 				D877785417DA2EC900CDDDB1 /* FMDatabase.m */,
 				D877785517DA2EC900CDDDB1 /* FMDatabaseAdditions.h */,
@@ -91,6 +87,18 @@
 				D877785A17DA2EC900CDDDB1 /* FMDatabaseQueue.m */,
 				D877785B17DA2EC900CDDDB1 /* FMResultSet.h */,
 				D877785C17DA2EC900CDDDB1 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		B31B6D4315C13D5200854074 = {
+			isa = PBXGroup;
+			children = (
+				B3CC61EF1716ECB500A1A8EF /* sqlite_API.h */,
+				B3CC61F01716ECB500A1A8EF /* sqlite_API.m */,
+				B3CC61F11716ECB500A1A8EF /* sqlite_EventListener.h */,
+				B3CC61F31716ECBB00A1A8EF /* sqlite_EventListener.m */,
+				50DA0023196B1E6500444045 /* FMDB */,
 				B31B6D5015C13D5200854074 /* Frameworks */,
 				B31B6D4F15C13D5200854074 /* Products */,
 			);
