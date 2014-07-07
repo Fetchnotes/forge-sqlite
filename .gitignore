@@ -141,6 +141,7 @@ module/ios/.DS_Store
 module/ios/.placeholder
 module/ios/module.a
 module/tests*
+inspector/ios-inspector.*
 
 .trigger/upload_tmp.zip
 
