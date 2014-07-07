@@ -153,7 +153,6 @@ inspector/ios-inspector/ForgeCore.bundle
 inspector/ios-inspector/ForgeCore.framework
 inspector/ios-inspector/ForgeInspector
 inspector/ios-inspector/build
-inspector/ios-inspector/ForgeInspector.xcodeproj/project.pbxproj
 inspector/ios-inspector/ForgeInspector.xcodeproj/project.xcworkspace/xcshareddata/ForgeInspector.xccheckout
 inspector/ios-inspector.*
 inspector/*an
