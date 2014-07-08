@@ -7,8 +7,6 @@
 //
 
 #import "FMDatabaseController.h"
-#import "FMDatabase.h"
-#import "FMDatabaseQueue.h"
 
 @interface FMDatabaseController ()
 

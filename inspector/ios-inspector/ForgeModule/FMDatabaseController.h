@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
 
 @interface FMDatabaseController : NSObject
 
 + (FMDatabaseController *)controller;
+
+- (void)queueInDatabase:(void(^)(FMDatabase *))operation;
 
 @end
