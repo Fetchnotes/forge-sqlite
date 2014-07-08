@@ -12,6 +12,8 @@
 
 @interface FMDatabaseController : NSObject
 
+@property (nonatomic, strong) NSString *databasePath;
+
 + (FMDatabaseController *)controller;
 
 - (void)queueInDatabase:(void(^)(FMDatabase *))operation;

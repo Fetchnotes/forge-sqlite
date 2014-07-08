@@ -38,10 +38,10 @@
         // Build path to database
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *docsPath = [paths objectAtIndex:0];
-        NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
+        controller.databasePath = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
 
         // Build and set a databaseQueue with database path
-        controller.databaseQueue = [FMDatabaseQueue databaseQueueWithPath:path];
+        controller.databaseQueue = [FMDatabaseQueue databaseQueueWithPath:controller.databasePath];
 
     });
 
