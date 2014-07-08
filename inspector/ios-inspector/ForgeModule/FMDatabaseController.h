@@ -10,4 +10,6 @@
 
 @interface FMDatabaseController : NSObject
 
++ (FMDatabaseController *)controller;
+
 @end
