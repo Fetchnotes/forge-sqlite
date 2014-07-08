@@ -50,4 +50,15 @@
     return controller;
 }
 
+- (void)queueInDatabase:(void(^)(FMDatabase *database))operation
+{
+    // Wrap queue inDatabase with asynchronous dispatch
+    dispatch_async(self.dispatch_queue, ^ {
+
+        // Pass operation block to queue inDatabase: to perform off the main thread
+        [self.databaseQueue inDatabase:operation];
+
+    });
+}
+
 @end
