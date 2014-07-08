@@ -1,27 +1,34 @@
 #import "sqlite_API.h"
-#import "FMDatabase.h"
-#import "FMDatabaseQueue.h"
+#import "FMDatabaseController.h"
 
 @implementation sqlite_API
 
 // Takes an array of sqlite queries to construct the database schema.
-+ (void)createTables:(ForgeTask *)task schema:(NSArray *)schema {
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *docsPath = [paths objectAtIndex:0];
-    NSString *path = [docsPath stringByAppendingPathComponent:@"database.sqlite"];
-    
-    FMDatabaseQueue *queue = [FMDatabaseQueue databaseQueueWithPath:path];
-    
-    [queue inDatabase:^(FMDatabase *database) {
-        for (NSDictionary * dataDict in schema) {
-            NSString * NAME = [dataDict objectForKey:@"name"];
-            NSString * SCHEMA = [dataDict objectForKey:@"schema"];
-            NSString * QUERY = [NSString stringWithFormat:@"CREATE TABLE %@ %@", NAME, SCHEMA];
-            [database executeUpdate:QUERY];
++ (void)createTables:(ForgeTask *)task schema:(NSArray *)tableDictionaries {
+
+    // Wrap everything in controller call
+    [[FMDatabaseController controller] queueInDatabase:^(FMDatabase *database) {
+
+        // Loop over each object passed in tableDictionaries (each correlates to a table)
+        for (NSDictionary *tableDictionary in tableDictionaries) {
+
+            // Grab table name from object for create query
+            NSString *tableName = [tableDictionary objectForKey:@"name"];
+
+            // Grab table schema from object for create query
+            NSString *tableSchema = [tableDictionary objectForKey:@"schema"];
+
+            // Build query to create table with name and schema
+            NSString *tableQuery = [NSString stringWithFormat:@"CREATE TABLE %@ %@", tableName, tableSchema];
+
+            // Execute update query to create the table
+            [database executeUpdate:tableQuery];
         }
+
+        // Call completion on the forge task
         [task success: nil];
     }];
+
 }
 
 // Takes an array of objects. Each object contains a string "query", and array of strings ["args"]. If the write was succesfully executed, this call will return the affected ids within an array.
