@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50AA24C8196C4174006AFA58 /* FMDatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AA24C7196C4174006AFA58 /* FMDatabaseController.m */; };
 		B31B6D5215C13D5200854074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B6D5115C13D5200854074 /* Foundation.framework */; };
 		B31B6D6F15C1467100854074 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B6D6E15C1467100854074 /* CoreFoundation.framework */; };
 		B37C3A5D162717A200B50A60 /* ForgeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C3A5C162717A200B50A60 /* ForgeCore.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50AA24C6196C4174006AFA58 /* FMDatabaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseController.h; sourceTree = "<group>"; };
+		50AA24C7196C4174006AFA58 /* FMDatabaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseController.m; sourceTree = "<group>"; };
 		B31B6D4E15C13D5200854074 /* libForgeModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libForgeModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31B6D5115C13D5200854074 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B31B6D6D15C1467100854074 /* sqlite.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sqlite.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +99,8 @@
 			children = (
 				B3CC61EF1716ECB500A1A8EF /* sqlite_API.h */,
 				B3CC61F01716ECB500A1A8EF /* sqlite_API.m */,
+				50AA24C6196C4174006AFA58 /* FMDatabaseController.h */,
+				50AA24C7196C4174006AFA58 /* FMDatabaseController.m */,
 				B3CC61F11716ECB500A1A8EF /* sqlite_EventListener.h */,
 				B3CC61F31716ECBB00A1A8EF /* sqlite_EventListener.m */,
 				50DA0023196B1E6500444045 /* FMDB */,
@@ -210,6 +215,7 @@
 				D877785D17DA2EC900CDDDB1 /* FMDatabase.m in Sources */,
 				D877785E17DA2EC900CDDDB1 /* FMDatabaseAdditions.m in Sources */,
 				D877785F17DA2EC900CDDDB1 /* FMDatabasePool.m in Sources */,
+				50AA24C8196C4174006AFA58 /* FMDatabaseController.m in Sources */,
 				D877786017DA2EC900CDDDB1 /* FMDatabaseQueue.m in Sources */,
 				D877786117DA2EC900CDDDB1 /* FMResultSet.m in Sources */,
 			);
