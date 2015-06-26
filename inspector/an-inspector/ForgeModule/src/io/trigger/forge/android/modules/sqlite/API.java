@@ -1,4 +1,4 @@
-package io.trigger.forge.android.modules.android_sqlite;
+package io.trigger.forge.android.modules.sqlite;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
