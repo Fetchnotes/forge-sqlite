@@ -1,6 +1,6 @@
 {
 	"description": "Exposes Sqlite API to JS",
-	"min_platform_version": "v2.2.13",
+	"min_platform_version": "v2.2.1",
 	"namespace": "sqlite",
 	"platform_version": "v2.2.13",
 	"version": "5.0.0",
