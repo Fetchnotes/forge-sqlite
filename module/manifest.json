@@ -1,0 +1,8 @@
+{
+	"description": "Exposes Sqlite API to JS",
+	"min_platform_version": "v2.2.13",
+	"namespace": "sqlite",
+	"platform_version": "v2.2.13",
+	"version": "5.0.0",
+	"changes": "Add Android support"
+}

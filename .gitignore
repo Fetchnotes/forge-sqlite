@@ -131,7 +131,6 @@ inspector/ios-inspector/.DS_Store
 
 ####
 #FORGE
-module/manifest.json
 module/.DS_Store
 module/android
 module/docs/*
