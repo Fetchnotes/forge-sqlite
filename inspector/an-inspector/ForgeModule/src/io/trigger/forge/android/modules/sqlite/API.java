@@ -1,5 +1,7 @@
 package io.trigger.forge.android.modules.sqlite;
 
+import java.util.ArrayList;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonNull;
@@ -47,8 +49,19 @@ public class API {
 				task.error("Each table must have a `query`");
 				return;
 			}
+
+			// If binding arguments were included, copy them into an array
+			String[] args = new String[0];
+			if (queryObj.has("args")){
+				ArrayList<String> argsList = new ArrayList<String>();
+				for (JsonElement arg : queryObj.get("args").getAsJsonArray()){
+					argsList.add(arg.getAsString());
+				}
+				args = argsList.toArray(new String[argsList.size()]);
+			}
+
 			try {
-				database.getDatabase().execSQL(queryObj.get("query").getAsString());
+				database.getDatabase().execSQL(queryObj.get("query").getAsString(), args);
 
 				int lastRow = getLastInsertRow();
 				rowsAffected.add(new JsonPrimitive(lastRow));

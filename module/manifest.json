@@ -3,6 +3,6 @@
 	"min_platform_version": "v2.2.1",
 	"namespace": "sqlite",
 	"platform_version": "v2.2.13",
-	"version": "5.0.0",
-	"changes": "Add Android support"
+	"version": "5.0.2",
+	"changes": "5.0.2: Add binding parameters\n\n5.0.0: Add Android support, temporarily remove iOS"
 }
