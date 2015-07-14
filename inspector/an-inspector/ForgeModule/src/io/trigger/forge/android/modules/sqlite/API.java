@@ -46,7 +46,7 @@ public class API {
 			}
 			JsonObject queryObj = query.getAsJsonObject();
 			if (!queryObj.has("query")){
-				task.error("Each table must have a `query`");
+				task.error("Each query must have a `query` field");
 				return;
 			}
 
