@@ -15,8 +15,6 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteException;
 
 public class API {
-	private static DB database = new DB();
-
 	private static final String INSERT_QUERY = "CREATE TABLE %s %s";
 
 	public static void createTables(final ForgeTask task, @ForgeParam("schema") final JsonArray tableDictionaries){
@@ -32,7 +30,7 @@ public class API {
 			}
 			String sql = String.format(INSERT_QUERY, obj.get("name").getAsString(), obj.get("schema").getAsString());
 			try {
-				database.getDatabase().execSQL(sql);
+				Database.getDatabase().execSQL(sql);
 			} catch (SQLException e) {
 				task.error(e);
 			}
@@ -64,7 +62,7 @@ public class API {
 			}
 
 			try {
-				database.getDatabase().execSQL(queryObj.get("query").getAsString(), args);
+				Database.getDatabase().execSQL(queryObj.get("query").getAsString(), args);
 
 				int lastRow = getLastInsertRow();
 				rowsAffected.add(new JsonPrimitive(lastRow));
@@ -96,7 +94,7 @@ public class API {
 		}
 	}
 	public static void removeDatabase(final ForgeTask task){
-		database.deleteDatabase();
+		Database.deleteDatabase();
 	}
 
 	private static JsonArray executeQuery(String query) throws SQLiteException {
@@ -105,7 +103,7 @@ public class API {
 		}
 		Cursor cursor = null;
 		try {
-			cursor = database.getDatabase().rawQuery(query, null);
+			cursor = Database.getDatabase().rawQuery(query, null);
 
 			JsonArray results = cursorToJson(cursor);
 			return results;
@@ -154,7 +152,7 @@ public class API {
 		int row;
 		Cursor cursor = null;
 		try {
-			cursor = database.getDatabase().rawQuery("SELECT last_insert_rowid() AS last_row", null);
+			cursor = Database.getDatabase().rawQuery("SELECT last_insert_rowid() AS last_row", null);
 			cursor.moveToFirst();
 			row = cursor.getInt(cursor.getColumnIndex("last_row"));
 		} finally {
