@@ -12,9 +12,12 @@ import io.trigger.forge.android.core.ForgeParam;
 import io.trigger.forge.android.core.ForgeTask;
 import android.database.Cursor;
 import android.database.SQLException;
+import android.database.sqlite.SQLiteException;
 
 public class API {
 	private static DB database = new DB();
+
+	private static final String INSERT_QUERY = "CREATE TABLE %s %s";
 
 	public static void createTables(final ForgeTask task, @ForgeParam("schema") final JsonArray tableDictionaries){
 		for(JsonElement element : tableDictionaries){
@@ -27,7 +30,7 @@ public class API {
 				task.error("Each table must have a `name` and `schema`");
 				return;
 			}
-			String sql = "CREATE TABLE " + obj.get("name").getAsString() + ' ' + obj.get("schema").getAsString();
+			String sql = String.format(INSERT_QUERY, obj.get("name").getAsString(), obj.get("schema").getAsString());
 			try {
 				database.getDatabase().execSQL(sql);
 			} catch (SQLException e) {
@@ -96,26 +99,33 @@ public class API {
 		database.deleteDatabase();
 	}
 
-	private static JsonArray executeQuery(String query) throws SQLException {
+	private static JsonArray executeQuery(String query) throws SQLiteException {
 		if (query.length() == 0){
-			throw new android.database.SQLException("Error: Query is 0 characters long");
+			throw new SQLiteException("Error: Query is 0 characters long");
 		}
-		Cursor cursor = database.getDatabase().rawQuery(query, null);
+		Cursor cursor = null;
+		try {
+			cursor = database.getDatabase().rawQuery(query, null);
 
-		JsonArray results = cursorToJson(cursor);
-		cursor.close();
-		return results;
+			JsonArray results = cursorToJson(cursor);
+			return results;
+		} catch (SQLiteException  e) {
+			throw e;
+		} finally {
+			cursor.close();
+		}
 	}
 	private static JsonArray cursorToJson(Cursor cursor){
 		JsonArray resultSet = new JsonArray();
 
 		cursor.moveToFirst();
 		while (!cursor.isAfterLast()) {
-            int totalColumn = cursor.getColumnCount();
-            JsonObject rowObject = new JsonObject();
+			int totalColumn = cursor.getColumnCount();
+			JsonObject rowObject = new JsonObject();
 
-            for( int i=0 ;  i< totalColumn ; i++ ) {
-				if( cursor.getColumnName(i) != null ) {
+			for( int i=0 ;  i< totalColumn ; i++ ) {
+				String columnName = cursor.getColumnName(i);
+				if( columnName != null ) {
 					JsonElement value;
 					switch (cursor.getType(i)){
 					case Cursor.FIELD_TYPE_INTEGER:
@@ -132,13 +142,13 @@ public class API {
 						value = JsonNull.INSTANCE;
 						break;
 					}
-					rowObject.add(cursor.getColumnName(i), value);
+					rowObject.add(columnName, value);
 				}
-            }
-            resultSet.add(rowObject);
-            cursor.moveToNext();
-        }
-        return resultSet;
+			}
+			resultSet.add(rowObject);
+			cursor.moveToNext();
+		}
+		return resultSet;
 	}
 	private static int getLastInsertRow() {
 		int row;
