@@ -132,14 +132,12 @@ inspector/ios-inspector/.DS_Store
 ####
 #FORGE
 module/.DS_Store
-module/android
-module/docs/*
 module/identity.json
 module/inspector_config.json
 module/ios/.DS_Store
 module/ios/.placeholder
 module/ios/module.a
-module/tests*
+module/android/module.jar
 inspector/ios-inspector.*
 
 .trigger/upload_tmp.zip
