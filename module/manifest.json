@@ -1,8 +1,8 @@
 {
+	"changes": "5.1.0: Add supports iOS and Android",
 	"description": "Exposes Sqlite API to JS",
 	"min_platform_version": "v2.2.1",
 	"namespace": "sqlite",
 	"platform_version": "v2.2.13",
-	"version": "5.0.2",
-	"changes": "5.0.2: Add binding parameters\n\n5.0.0: Add Android support, temporarily remove iOS"
+	"version": "5.1.1"
 }
